@@ -26,14 +26,16 @@
     font-family: 'Rubik', sans-serif;
 }
 
-button {
+.time-period h3 {
     background: none;
     border: none;
     color: var(--Pale-Blue);
     cursor: pointer;
+    font-weight: 300;
+    line-height: 1.6;
 }
 
-button:hover {
+.time-period h3:hover {
     color: white;
 }
 
@@ -66,7 +68,7 @@ button:hover {
     flex-direction: column;
     /* gap: 10px; */
     border-radius: 10px;
-    width: 100%;
+    /* width: 100%; */
     height: 350px;
     background-color: var(--Blue);
 }
@@ -102,7 +104,7 @@ button:hover {
     flex-direction: column;
     gap: 10px;
     margin: .8rem;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 10px;
     background-color: var(--Dark-blue);
     grid-area: one;
@@ -117,11 +119,11 @@ button:hover {
     padding: 10px;
 }
 
-.time-period-btn button {
+.time-period-btn .time-period-btn h3 {
     font-size: 14px;
 }
 
-.time-period-btn button.active {
+.time-period-btn h3.active {
     color: white;
 }
 
@@ -132,7 +134,6 @@ button:hover {
     flex-direction: column;
     gap: 10px;
     margin: .8rem;
-    padding: 10px;
     border-radius: 10px;
     background-color: var(--work);
     grid-area: two;
@@ -145,7 +146,6 @@ button:hover {
     flex-direction: column;
     gap: 10px;
     margin: .8rem;
-    padding: 10px;
     border-radius: 10px;
     background-color: var(--play);
     grid-area: three;
@@ -158,7 +158,6 @@ button:hover {
     flex-direction: column;
     gap: 10px;
     margin: .8rem;
-    padding: 10px;
     border-radius: 10px;
     background-color: var(--study);
     grid-area: four;
@@ -171,7 +170,6 @@ button:hover {
     flex-direction: column;
     gap: 10px;
     margin: .8rem;
-    padding: 10px;
     border-radius: 10px;
     background-color: var(--exercise);
     grid-area: five;
@@ -184,7 +182,6 @@ button:hover {
     flex-direction: column;
     gap: 10px;
     margin: .8rem;
-    padding: 10px;
     border-radius: 10px;
     background-color: var(--social);
     grid-area: six;
@@ -197,7 +194,6 @@ button:hover {
     flex-direction: column;
     gap: 10px;
     margin: .8rem;
-    padding: 10px;
     border-radius: 10px;
     background-color: var(--self-care);
     grid-area: seven;
@@ -215,10 +211,11 @@ button:hover {
 
 .info {
     background-color: var(--Dark-blue);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;    
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px;     */
     color: #fff;
-    height: calc(100% - 10%);
+    border-radius: 10px;
+    height: 100%;
     width: 100%;
 }
 
@@ -229,6 +226,7 @@ button:hover {
 
 .info-header {
     display: inline;
+    
 }
 
 .info-header img {
